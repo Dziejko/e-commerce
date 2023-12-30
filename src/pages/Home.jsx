@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom'
 
 import { TopRates } from '../components/TopRates'
 import { MostReduced } from '../components/MostReduced'
-import { Price } from '../components/price'
+import { Price } from '../components/Pricee'
 import { Slider } from "../components/Slider";
 
 export function Home({items,cartItems,setCartItems}){
