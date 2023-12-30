@@ -3,6 +3,7 @@ import { useEffect, useState } from "react"
 import { Price } from "../components/Pricee"
 import { Link } from "react-router-dom"
 
+import Image from "../images/empty-cart.png"
 
 export function Cart({cartItems,setCartItems}){
    const [totalPrice,setTotalPrice]=useState(0)
@@ -14,7 +15,7 @@ export function Cart({cartItems,setCartItems}){
    }
    useEffect(()=>{
    
-      let prices=cartItems.map(item=>item.price-item.price*item.reducedPricet/100)
+      let prices=cartItems.map(item=>item.price-item.price*item.reducedPrice/100)
          prices.map(price=>setTotalPrice(prevPrice=>prevPrice+price))
       let discList=cartItems.filter(item=>item.isReduced===true)
       let disc=discList.map(item=>item.price-item.price*(100-item.reducedPrice)/100)
@@ -75,7 +76,7 @@ export function Cart({cartItems,setCartItems}){
          </section>
          :
          <div className="empty-cart-div">
-         <img className="empty-cart-img" src="src/images/empty-cart.png"/>
+         <img className="empty-cart-img" src={Image} alt="empty cart"/>
         <Link to='/home'>
          <button className="empty-cart-btn">Back To Shopping</button>
          </Link>

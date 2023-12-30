@@ -30,7 +30,7 @@ export function Navbar({cartItems}){
     
     return(
         <nav className='navbar'>
-        <Link className="title" to="/e-commerce/home">
+        <Link className="title" to="/home">
             <h1 className='title'>E-SHOES</h1>
         </Link>
        
