@@ -515,7 +515,7 @@ cursor: pointer;
   .item-page-container{
     grid-template-columns: repeat(auto-fit,minmax(200px, 1fr));
   }
-  .add-to-cart-btn{
+  .add-to-cart-btn,.remove-from-cart-btn{
     width: 70%;
   }
 }
