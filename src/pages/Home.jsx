@@ -37,7 +37,7 @@ export function Home({items,cartItems,setCartItems}){
         <ul className='list-items'>
         {items.map(item=>
 
-        <Link key={item.id} to={`/item/${item.id}`} state={{data:item}} className='list-items'>
+        <Link key={item.id} to={`/e-commerce/item/${item.id}`} state={{data:item}} className='list-items'>
            <li className='list-item'>
               <img src={item.image} />
             

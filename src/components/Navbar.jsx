@@ -30,15 +30,15 @@ export function Navbar({cartItems}){
     
     return(
         <nav className='navbar'>
-        <Link className="title" to="/home">
+        <Link className="title" to="/e-commerce/home">
             <h1 className='title'>E-SHOES</h1>
         </Link>
        
-        <Link to="/home">
+        <Link to="/e-commerce/home">
             <img className='home-icon' src={homeIcon} />
         </Link>
 
-        <Link to="/cart" >
+        <Link to="/e-commerce/cart" >
         <div className="div-cart">
         <img className='cart-icon' src={cartIcon} />
         <span className="cart-items-count">{cartItems.length}</span>
