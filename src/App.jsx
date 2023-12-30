@@ -27,9 +27,9 @@ function App() {
   <Navbar cartItems={cartItems}/>
     <Routes>
       <Route index element={<Home cartItems={cartItems} setCartItems={setCartItems} items={items}/>}/>
-      <Route path="/e-commerce/home" element={<Home cartItems={cartItems} setCartItems={setCartItems} items={items} />} />
-      <Route path="/e-commerce/cart" element={<Cart cartItems={cartItems} setCartItems={setCartItems}/>} />
-      <Route path="/e-commerce/item/:id" element={<Item cartItems={cartItems} setCartItems={setCartItems} />} />
+      <Route path="/home" element={<Home cartItems={cartItems} setCartItems={setCartItems} items={items} />} />
+      <Route path="/cart" element={<Cart cartItems={cartItems} setCartItems={setCartItems}/>} />
+      <Route path="/item/:id" element={<Item cartItems={cartItems} setCartItems={setCartItems} />} />
     </Routes>
     </BrowserRouter>
 
