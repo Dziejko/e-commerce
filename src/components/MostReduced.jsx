@@ -10,7 +10,7 @@ export function MostReduced({ mostReduced, cartItems, setCartItems }) {
         {mostReduced.map((item) => (
           <Link
             key={item.id}
-            to={`/e-commerce/item/${item.id}`}
+            to={`/item/${item.id}`}
             state={{ data: item }}
             className="list-items"
           >
@@ -18,7 +18,7 @@ export function MostReduced({ mostReduced, cartItems, setCartItems }) {
               <img src={item.image} />
               <p className="item-name">{item.name}</p>
               <Price item={item} />
-              <Link to="/e-commerce/cart">
+              <Link to="/cart">
                 <button
                   onClick={() => setCartItems([...cartItems, item])}
                   className="buy-now-btn"

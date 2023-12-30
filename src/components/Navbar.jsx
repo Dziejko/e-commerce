@@ -34,11 +34,11 @@ export function Navbar({cartItems}){
             <h1 className='title'>E-SHOES</h1>
         </Link>
        
-        <Link to="/e-commerce/home">
+        <Link to="/home">
             <img className='home-icon' src={homeIcon} />
         </Link>
 
-        <Link to="/e-commerce/cart" >
+        <Link to="/cart" >
         <div className="div-cart">
         <img className='cart-icon' src={cartIcon} />
         <span className="cart-items-count">{cartItems.length}</span>
