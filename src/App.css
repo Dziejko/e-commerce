@@ -486,9 +486,7 @@ cursor: pointer;
     margin: 0px;
     margin-top: 50px;
   }
-  .item-page-container{
-    grid-template-columns: repeat(auto-fit,minmax(200px, 1fr));
-  }
+  
   .empty-cart-div{
     width: 90%;
     justify-content: center;
@@ -513,6 +511,12 @@ cursor: pointer;
   }
   .empty-cart-div>a{
     width: clamp(50%,70%,400px)
+  }
+  .item-page-container{
+    grid-template-columns: repeat(auto-fit,minmax(200px, 1fr));
+  }
+  .add-to-cart-btn{
+    width: 70%;
   }
 }
 @media (max-width:900px){
