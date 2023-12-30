@@ -9,15 +9,15 @@ export function Cart({cartItems,setCartItems}){
    const[discounts,setDiscounts]=useState(0)
    function remove(item,idx){
       setCartItems(cartItems.filter((prevItem,index)=>index!==idx))
-     setTotalPrice(prevPrice=>prevPrice-item.price*(100-item.reducedPercent)/100)
-     setDiscounts(prevDisc=>prevDisc-item.price*item.reducedPercent/100)
+     setTotalPrice(prevPrice=>prevPrice-item.price*(100-item.reducedPrice)/100)
+     setDiscounts(prevDisc=>prevDisc-item.price*item.reducedPrice/100)
    }
    useEffect(()=>{
    
-      let prices=cartItems.map(item=>item.price-item.price*item.reducedPercent/100)
+      let prices=cartItems.map(item=>item.price-item.price*item.reducedPricet/100)
          prices.map(price=>setTotalPrice(prevPrice=>prevPrice+price))
       let discList=cartItems.filter(item=>item.isReduced===true)
-      let disc=discList.map(item=>item.price-item.price*(100-item.reducedPercent)/100)
+      let disc=discList.map(item=>item.price-item.price*(100-item.reducedPrice)/100)
          disc.map(disc=>setDiscounts(prevDisc=>prevDisc+disc))
       },[])
    
@@ -75,7 +75,7 @@ export function Cart({cartItems,setCartItems}){
          </section>
          :
          <div className="empty-cart-div">
-         <img className="empty-cart-img" src="src/icons/empty-cart.png"/>
+         <img className="empty-cart-img" src="src/images/empty-cart.png"/>
         <Link to='/home'>
          <button className="empty-cart-btn">Back To Shopping</button>
          </Link>
