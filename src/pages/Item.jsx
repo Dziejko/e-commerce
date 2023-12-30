@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 
 
-import { Price } from "../components/price";
+import { Price } from "../components/Pricee";
 import { useLocation } from 'react-router-dom'
 
 import starIcon from "../icons/star-icon.svg"

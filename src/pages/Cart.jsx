@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react"
 
-import { Price } from "../components/price"
+import { Price } from "../components/Pricee"
 import { Link } from "react-router-dom"
 
 export function Cart({cartItems,setCartItems}){
