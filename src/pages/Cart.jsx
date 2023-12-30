@@ -3,6 +3,7 @@ import { useEffect, useState } from "react"
 import { Price } from "../components/Pricee"
 import { Link } from "react-router-dom"
 
+
 export function Cart({cartItems,setCartItems}){
    const [totalPrice,setTotalPrice]=useState(0)
    const[discounts,setDiscounts]=useState(0)
@@ -74,7 +75,7 @@ export function Cart({cartItems,setCartItems}){
          </section>
          :
          <div className="empty-cart-div">
-         <img className="empty-cart-img" src="empty-cart.png"/>
+         <img className="empty-cart-img" src="src/icons/empty-cart.png"/>
         <Link to='/home'>
          <button className="empty-cart-btn">Back To Shopping</button>
          </Link>
