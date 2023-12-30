@@ -26,7 +26,8 @@ function App() {
   <BrowserRouter>
   <Navbar cartItems={cartItems}/>
     <Routes>
-      <Route index element={<Home cartItems={cartItems} setCartItems={setCartItems} items={items}/>}/>
+      {/* <Route index element={<Home cartItems={cartItems} setCartItems={setCartItems} items={items}/>}/> */}
+      <Route path="/e-commerce" element={<Home cartItems={cartItems} setCartItems={setCartItems} items={items} />} />
       <Route path="/e-commerce/home" element={<Home cartItems={cartItems} setCartItems={setCartItems} items={items} />} />
       <Route path="/e-commerce/cart" element={<Cart cartItems={cartItems} setCartItems={setCartItems}/>} />
       <Route path="/e-commerce/item/:id" element={<Item cartItems={cartItems} setCartItems={setCartItems} />} />
